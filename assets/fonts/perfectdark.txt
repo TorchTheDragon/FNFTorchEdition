@@ -1,0 +1,100 @@
+___________________________________
+Perfect Dark  Created by Brian Kent
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Thanks for Downloading Perfect Dark.
+
+
+  This Font is based on the Logo from the game Perfect Dark.
+
+  This Font uses Character Extenders [ !@#$%^ ] to give some of the
+characters in the Font a longer TOP (when you have the letters A, a, D
+and/or d in your text). For example, if you type out Perfect Dark",
+type it out like this, Perfect D@a%rk" to give the a and r in Dark
+extenders.  Each Extender is a different size:
+
+! =x1 length
+@ =x2 length
+# =x3 length
+$ =x4 length
+% =x5 length
+^ =x6 length
+
+  The following characters do not use extenders: CcGgjOoQqSsXx0589"',.
+
+
+  The whole Font is made with Capital letters but some of the
+Characters have more than 1 letter Character.  They are:
+Ee [the e has a slightly higher middle prong like in the PD LOGO]
+Ff [the f has a slightly higher lower prong like in the PD LOGO]
+Gg
+Hh
+Ii
+Jj
+Nn
+Oo [you can also use 0 and ) for the O's or 0's]
+Ss [you can also use 5 for an S and vice versa]
+Uu
+Vv
+Xx
+
+
+  A few last things.  This Font uses A LOT of Kerning to make the
+Characters fit correctly so make sure what ever program you're using
+have Character Kerning ON (sometimes if you're using a text editor
+like Microsoft Word, you usualy have turn the Kerning ON).  Finally,
+to make the Font look more like the Games Logo (slanted), use Italic
+on the Font.
+
+
+If you have any questions or comments, you can e-mail me at
+kentpw@norwich.net
+
+You can visit my Homepage <ÆNIGMA GAMES & FONTS> at
+http://aenigma.cellosoft.com/
+
+________________
+INSTALLING FONTS
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+  There's a couple of ways to install Fonts. The 'easy' way to
+install fonts is to just Unzip/place the font file [.ttf] into your
+Windows\Fonts directory (I always use this method). If you're unable
+to do it the 'easy' way, then try to do it this way (for Windows
+95/98/NT):
+
+1] Unzip the Font(s) to a folder (or somewhere, just remember where
+you unzipped it) on your Computer.
+
+2] Next, click on the START button, then select SETTINGS then
+CONTROL PANEL.
+
+3] When the Control Panel Window pops up, Double Click on FONTS.
+
+4] When the FONTS window pops up, select File then Install New Font...
+
+5] A Add Fonts window will pop up, just go to the folder that you
+unzipped the Font(s) to, select the Font(s) and then click on OK.
+Now the Font(s) are installed.
+
+  Now you can use the Font(s) in programs the utilize Fonts.  Make
+sure that you install the font(s) first, then open up your apps
+(so the app will recognize the font).    Sometimes you'll have to
+wait until you computer 'auto-refreshes' for programs to recognize
+fonts (Windows is sometimes slow to do that).  You can refresh your
+computer quicker by going into Windows Explorer -or- My Computer and
+press ALT + V, then R (or in the menubar select VIEW then REFRESH).
+
+
+__________
+DISCLAIMER
+¯¯¯¯¯¯¯¯¯¯
+-The font(s) in this zip file were created by me (Brian Kent).  All
+of my Fonts are Freeware, you can use them any way you want to
+(Personal use, Commercial use, or whatever).
+
+-If you have a Font related site and would like to offer my fonts on
+your site, go right ahead. All I ask is that you keep this text file
+intact with the Font.
+
+-You may not Sell or Distribute my Fonts for profit or alter them in
+any way without asking me first.  [e-mail -  kentpw@norwich.net]

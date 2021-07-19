@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bestdwagonboio.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Torch Dead0000" x="50" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0001" x="488" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0002" x="926" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0003" x="1364" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0004" x="1802" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0005" x="2240" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0006" x="2678" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0007" x="3116" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0008" x="3554" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0009" x="3116" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0010" x="3554" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0011" x="3116" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0012" x="3554" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0013" x="3116" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0014" x="3554" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0015" x="3116" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0016" x="3554" y="50" width="388" height="448"/>
+	<SubTexture name="Torch Dead0017" x="50" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0018" x="488" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0019" x="926" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0020" x="1364" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0021" x="1802" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0022" x="2240" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0023" x="2678" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0024" x="3116" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0025" x="3554" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0026" x="3116" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0027" x="3554" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0028" x="3116" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0029" x="3554" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0030" x="3116" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0031" x="3554" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0032" x="3116" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Dead0033" x="3554" y="548" width="388" height="448"/>
+	<SubTexture name="Torch Down MISS0000" x="50" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0001" x="491" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0002" x="491" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0003" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0004" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0005" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0006" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0007" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0008" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0009" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0010" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0011" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0012" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0013" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0014" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0015" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0016" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0017" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0018" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0019" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0020" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0021" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0022" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0023" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0024" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0025" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0026" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0027" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down MISS0028" x="932" y="1046" width="391" height="425"/>
+	<SubTexture name="Torch Down NOTE0000" x="1373" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0001" x="1373" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0002" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0003" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0004" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0005" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0006" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0007" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0008" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0009" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0010" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0011" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0012" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0013" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0014" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0015" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0016" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0017" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0018" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0019" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0020" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0021" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0022" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0023" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0024" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0025" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0026" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0027" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0028" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Down NOTE0029" x="1819" y="1046" width="396" height="420"/>
+	<SubTexture name="Torch Dying0000" x="2265" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0001" x="2265" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0002" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0003" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0004" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0005" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0006" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0007" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0008" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0009" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0010" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0011" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0012" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0013" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0014" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0015" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0016" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0017" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0018" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0019" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0020" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0021" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0022" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0023" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0024" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0025" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0026" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0027" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0028" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0029" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0030" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0031" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0032" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0033" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0034" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0035" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0036" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0037" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0038" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0039" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0040" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0041" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0042" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0043" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0044" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0045" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0046" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0047" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0048" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0049" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0050" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0051" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0052" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0053" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0054" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0055" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch Dying0056" x="2703" y="1046" width="388" height="446"/>
+	<SubTexture name="Torch HOI!0000" x="3141" y="1046" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0001" x="3141" y="1046" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0002" x="3579" y="1046" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0003" x="3579" y="1046" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0004" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0005" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0006" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0007" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0008" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0009" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0010" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0011" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0012" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0013" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0014" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0015" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0016" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0017" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0018" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0019" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0020" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0021" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0022" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0023" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0024" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch HOI!0025" x="50" y="1542" width="388" height="445"/>
+	<SubTexture name="Torch Idle0000" x="488" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0001" x="488" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0002" x="878" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0003" x="878" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0004" x="1268" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0005" x="1268" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0006" x="1658" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0007" x="1658" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0008" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0009" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0010" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0011" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0012" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Idle0013" x="2048" y="1542" width="340" height="441"/>
+	<SubTexture name="Torch Left MISS0000" x="2438" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0001" x="2836" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0002" x="2836" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0003" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0004" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0005" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0006" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0007" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0008" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0009" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0010" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0011" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0012" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0013" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0014" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0015" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0016" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0017" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0018" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0019" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0020" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0021" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0022" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0023" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0024" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0025" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0026" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0027" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0028" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0029" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0030" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0031" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0032" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left MISS0033" x="3234" y="1542" width="348" height="435"/>
+	<SubTexture name="Torch Left NOTE0000" x="3632" y="1542" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0001" x="3632" y="1542" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0002" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0003" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0004" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0005" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0006" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0007" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0008" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0009" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0010" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0011" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0012" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Left NOTE0013" x="50" y="2037" width="364" height="429"/>
+	<SubTexture name="Torch Retry0000" x="464" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0001" x="903" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0002" x="903" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0003" x="1342" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0004" x="1342" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0005" x="1781" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0006" x="1781" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0007" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0008" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0009" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0010" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0011" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0012" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0013" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0014" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0015" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0016" x="2220" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0017" x="2659" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0018" x="3098" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0019" x="3098" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0020" x="3537" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0021" x="3537" y="2037" width="389" height="453"/>
+	<SubTexture name="Torch Retry0022" x="50" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0023" x="50" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0024" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0025" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0026" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0027" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0028" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0029" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0030" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0031" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0032" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Retry0033" x="489" y="2540" width="389" height="453"/>
+	<SubTexture name="Torch Right MISS0000" x="928" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0001" x="1365" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0002" x="1365" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0003" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0004" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0005" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0006" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0007" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0008" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0009" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0010" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0011" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0012" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0013" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0014" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0015" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0016" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0017" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0018" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0019" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0020" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0021" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0022" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0023" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0024" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0025" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0026" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0027" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0028" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0029" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0030" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0031" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0032" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0033" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0034" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0035" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0036" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0037" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0038" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0039" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0040" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0041" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0042" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0043" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0044" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right MISS0045" x="1802" y="2540" width="387" height="438"/>
+	<SubTexture name="Torch Right NOTE0000" x="2239" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0001" x="2239" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0002" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0003" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0004" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0005" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0006" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0007" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0008" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0009" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0010" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0011" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0012" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0013" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0014" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0015" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0016" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0017" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0018" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0019" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0020" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0021" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0022" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0023" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0024" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0025" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0026" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0027" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0028" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0029" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0030" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0031" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0032" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0033" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0034" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0035" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0036" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0037" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0038" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0039" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0040" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0041" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0042" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0043" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0044" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0045" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0046" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0047" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0048" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0049" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0050" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0051" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0052" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0053" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0054" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0055" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0056" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0057" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0058" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0059" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0060" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Right NOTE0061" x="2674" y="2540" width="385" height="438"/>
+	<SubTexture name="Torch Scawwy0000" x="3109" y="2540" width="327" height="441"/>
+	<SubTexture name="Torch Scawwy0001" x="3486" y="2540" width="327" height="441"/>
+	<SubTexture name="Torch Scawwy0002" x="50" y="3043" width="327" height="441"/>
+	<SubTexture name="Torch Scawwy0003" x="427" y="3043" width="327" height="441"/>
+	<SubTexture name="Torch Up MISS0000" x="804" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0001" x="1212" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0002" x="1212" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0003" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0004" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0005" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0006" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0007" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0008" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0009" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0010" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0011" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0012" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0013" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0014" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0015" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0016" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0017" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0018" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0019" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0020" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0021" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0022" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up MISS0023" x="1620" y="3043" width="358" height="450"/>
+	<SubTexture name="Torch Up NOTE0000" x="2028" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0001" x="2028" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0002" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0003" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0004" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0005" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0006" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0007" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0008" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0009" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0010" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0011" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0012" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0013" x="2435" y="3043" width="357" height="447"/>
+	<SubTexture name="Torch Up NOTE0014" x="2435" y="3043" width="357" height="447"/>
+</TextureAtlas>
