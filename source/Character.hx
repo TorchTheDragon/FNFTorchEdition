@@ -88,6 +88,24 @@ class Character extends FlxSprite
 
 				flipX = true;
 
+			case 'trey':
+					//New Trey
+					tex = Paths.getSparrowAtlas('dragons-stuff/peeps/TreyBoio', 'shared');
+					frames = tex;
+					animation.addByPrefix('idle', 'Idle', 24);
+					animation.addByPrefix('singUP', 'Up', 24);
+					animation.addByPrefix('singRIGHT', 'Right', 24);
+					animation.addByPrefix('singDOWN', 'Down', 24);
+					animation.addByPrefix('singLEFT', 'Left', 24);
+	
+					addOffset('idle');
+					addOffset("singUP", -6, 50);
+					addOffset("singRIGHT", 0, 27);
+					addOffset("singLEFT", -10, 10);
+					addOffset("singDOWN", 0, -30);
+	
+					playAnim('idle');
+
 			case 'gf':
 				// GIRLFRIEND CODE
 				tex = Paths.getSparrowAtlas('characters/GF_assets');
