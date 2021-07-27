@@ -74,4 +74,4 @@ I will definitely have to create new arrows tho
 
 
 
-decided to not add Pyre, but may redo Torch and redo the arrows to better match the characters. I am however going to be working on two other characters for my friends, one of which is for Merricide, the second one is going to be a surprise for now.
+Decided to not add Pyre, but may redo Torch and redo the arrows to better match the characters. I am however going to be working on two other characters for my friends, one of which is for Merricide, the second one is going to be a surprise for now. One thing I did actually do though was organize the characters in the selection list so it was easier for me to test them in the charting menu, mainly grouped the people together like all bf's, all gf's, the parents, yada yada
