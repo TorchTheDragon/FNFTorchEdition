@@ -63,6 +63,8 @@ import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
+import Boyfriend.Boyfriend;
+import Character.Character;
 
 #if windows
 import Discord.DiscordClient;
@@ -138,6 +140,10 @@ class PlayState extends MusicBeatState
 
 	private var camZooming:Bool = false;
 	private var curSong:String = "";
+
+	public var color1:FlxColor = FlxColor.RED; //used for both Enemy HealthBar Color and SongPosition color
+	public var color2:FlxColor = FlxColor.LIME; //used for Player colors but can be used for anything else I see fit.
+	public var songBarBaseColor:FlxColor = FlxColor.GRAY; //obviously for BaseColor on SongPositionBar
 
 	private var gfSpeed:Int = 1;
 	public var health:Float = 1; //making public because sethealth doesnt work without it
@@ -798,7 +804,21 @@ class PlayState extends MusicBeatState
 		dad = new Character(100, 100, SONG.player2);
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
-
+		
+		
+		switch (SONG.player1)
+		{
+			case 'bf':
+				color2 = 0xFF31B0D1;
+			case 'bf-christmas':
+				color2 = 0xFF31B0D1;
+			case 'bf-pixel':
+				color2 = 0xFF31B0D1;
+			case 'bf-car':
+				color2 = 0xFF31B0D1;	
+			case 'torch':
+				color2 = 0xFF9B0000;
+		}
 		switch (SONG.player2)
 		{
 			case 'gf':
@@ -812,29 +832,43 @@ class PlayState extends MusicBeatState
 
 			case "spooky":
 				dad.y += 200;
+				color1 = 0xFFD57E00;
 			case "monster":
 				dad.y += 100;
+				color1 = 0xFFF3FF6E;
 			case 'monster-christmas':
 				dad.y += 130;
+				color1 = 0xFFF3FF6E;
 			case 'dad':
 				camPos.x += 400;
+				color1 = 0xFFAF66CE;
+			case 'trey':
+				dad.y += 50;
+				color1 = 0xFF00FFE5;
+				camPos.set(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
+				//tweenCamIn();
 			case 'pico':
 				camPos.x += 600;
 				dad.y += 300;
+				color1 = 0xFFB7D855;
 			case 'parents-christmas':
 				dad.x -= 500;
+				color1 = 0xFF90395E;
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				color1 = 0xFFFFAA6F;
 			case 'senpai-angry':
 				dad.x += 150;
 				dad.y += 360;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				color1 = 0xFFFFAA6F;
 			case 'spirit':
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				color1 = 0xFFFF3C6E;
 		}
 
 
@@ -971,10 +1005,11 @@ class PlayState extends MusicBeatState
 				songPosBG.scrollFactor.set();
 				add(songPosBG);
 				
+				//testSongBar
 				songPosBar = new FlxBar(songPosBG.x + 4, songPosBG.y + 4, LEFT_TO_RIGHT, Std.int(songPosBG.width - 8), Std.int(songPosBG.height - 8), this,
 					'songPositionBar', 0, 90000);
 				songPosBar.scrollFactor.set();
-				songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
+				songPosBar.createFilledBar(songBarBaseColor, color1);
 				add(songPosBar);
 	
 				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - (SONG.song.length * 5),songPosBG.y,0,SONG.song, 16);
@@ -993,10 +1028,24 @@ class PlayState extends MusicBeatState
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
 
+
+		//Test HealthBar
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		/**if (SONG.player1 == 'torch' && SONG.player2 == 'trey') {
+			color1 == FlxColor.CYAN;
+			color2 == FlxColor.RED;
+		}
+			//healthBar.createFilledBar(FlxColor.CYAN, FlxColor.RED);
+		else if (SONG.player1 == 'torch') {
+			healthBar.createFilledBar(color2, FlxColor.RED);
+		}
+		else if (SONG.player2 == 'trey') {
+			healthBar.createFilledBar(FlxColor.CYAN, color2);
+		}
+		else**/
+		healthBar.createFilledBar(color1, color2);
 		// healthBar
 		add(healthBar);
 
@@ -1472,7 +1521,7 @@ class PlayState extends MusicBeatState
 				'songPositionBar', 0, songLength - 1000);
 			songPosBar.numDivisions = 1000;
 			songPosBar.scrollFactor.set();
-			songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
+			songPosBar.createFilledBar(songBarBaseColor, color1);
 			add(songPosBar);
 
 			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - (SONG.song.length * 5),songPosBG.y,0,SONG.song, 16);
@@ -1586,10 +1635,12 @@ class PlayState extends MusicBeatState
 				else
 					oldNote = null;
 
-				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
-
-				if (!gottaHitNote && PlayStateChangeables.Optimize)
-					continue;
+				var swagNote:Note;
+				if (gottaHitNote) {
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false);
+				} else {
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, true);
+				}
 
 				swagNote.sustainLength = songNotes[2];
 				swagNote.scrollFactor.set(0, 0);
@@ -1603,7 +1654,13 @@ class PlayState extends MusicBeatState
 				{
 					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
+					//var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
+					var sustainNote:Note;
+					if (gottaHitNote) {
+						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
+					} else {
+						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
+					}
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
 
@@ -1727,6 +1784,43 @@ class PlayState extends MusicBeatState
 							babyArrow.animation.addByPrefix('static', 'arrow static instance 3');
 							babyArrow.animation.addByPrefix('pressed', 'right press instance 1', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'right confirm instance 1', 24, false);
+						}
+
+				case "torchn'trey":
+					if (player == 0)
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
+					else 
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
+					babyArrow.animation.addByPrefix('green', 'arrowLEFT');
+					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
+					babyArrow.animation.addByPrefix('purple', 'arrowUP');
+					babyArrow.animation.addByPrefix('red', 'arrowRIGHT');
+	
+					babyArrow.antialiasing = true;
+					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.7));
+	
+					switch (Math.abs(i))
+					{
+						case 0:
+							babyArrow.x += Note.swagWidth * 0;
+							babyArrow.animation.addByPrefix('static', 'arrowLEFT');
+							babyArrow.animation.addByPrefix('pressed', 'leftPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'leftCONFIRM', 24, false);
+						case 1:
+							babyArrow.x += Note.swagWidth * 1;
+							babyArrow.animation.addByPrefix('static', 'arrowDOWN');
+							babyArrow.animation.addByPrefix('pressed', 'downPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'downCONFIRM', 24, false);
+						case 2:
+							babyArrow.x += Note.swagWidth * 2;
+							babyArrow.animation.addByPrefix('static', 'arrowUP');
+							babyArrow.animation.addByPrefix('pressed', 'upPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'upCONFIRM', 24, false);
+						case 3:
+							babyArrow.x += Note.swagWidth * 3;
+							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
+							babyArrow.animation.addByPrefix('pressed', 'rightPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'rightCONFIRM', 24, false);
 						}
 
 				default:

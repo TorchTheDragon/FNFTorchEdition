@@ -89,22 +89,25 @@ class Character extends FlxSprite
 				flipX = true;
 
 			case 'trey':
-					//New Trey
-					tex = Paths.getSparrowAtlas('dragons-stuff/peeps/TreyBoio', 'shared');
-					frames = tex;
-					animation.addByPrefix('idle', 'Idle', 24);
-					animation.addByPrefix('singUP', 'Up', 24);
-					animation.addByPrefix('singRIGHT', 'Right', 24);
-					animation.addByPrefix('singDOWN', 'Down', 24);
-					animation.addByPrefix('singLEFT', 'Left', 24);
+				//New Trey
+				tex = Paths.getSparrowAtlas('dragons-stuff/peeps/TreyBoio');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24);
+				animation.addByPrefix('singUP', 'Up', 24);
+				animation.addByPrefix('singRIGHT', 'Right', 24);
+				animation.addByPrefix('singDOWN', 'Down', 24);
+				animation.addByPrefix('singLEFT', 'Left', 24);
 	
-					addOffset('idle');
-					addOffset("singUP", -6, 50);
-					addOffset("singRIGHT", 0, 27);
-					addOffset("singLEFT", -10, 10);
-					addOffset("singDOWN", 0, -30);
+				addOffset('idle', 165, 48);
+				addOffset("singUP", 110, 50);
+				addOffset("singRIGHT", 114, 18);
+				addOffset("singLEFT", 162, 45);
+				addOffset("singDOWN", 114, 1);
 	
-					playAnim('idle');
+				playAnim('idle');
+
+				setGraphicSize(Std.int(width * 0.9));
+                updateHitbox();
 
 			case 'gf':
 				// GIRLFRIEND CODE

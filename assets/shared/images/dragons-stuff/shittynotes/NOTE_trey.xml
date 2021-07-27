@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="NOTE_trey.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrowDOWN0000" x="1196" y="242" width="157" height="154"/>
+	<SubTexture name="arrowGLOW0000" x="5" y="245" width="157" height="154"/>
+	<SubTexture name="arrowLEFT0000" x="167" y="245" width="154" height="157"/>
+	<SubTexture name="arrowRIGHT0000" x="326" y="245" width="154" height="157"/>
+	<SubTexture name="arrowUP0000" x="5" y="245" width="157" height="154"/>
+	<SubTexture name="down0000" x="485" y="245" width="157" height="154"/>
+	<SubTexture name="downCONFIRM0000" x="5" y="5" width="238" height="235"/>
+	<SubTexture name="downCONFIRM0001" x="248" y="5" width="238" height="235"/>
+	<SubTexture name="downCONFIRM0002" x="491" y="5" width="238" height="235"/>
+	<SubTexture name="downCONFIRM0003" x="491" y="5" width="238" height="235"/>
+	<SubTexture name="downEND0000" x="1923" y="5" width="50" height="64"/>
+	<SubTexture name="downGLOW0000" x="1196" y="401" width="157" height="154"/>
+	<SubTexture name="downHOLD0000" x="1923" y="143" width="50" height="44"/>
+	<SubTexture name="downPRESS0000" x="950" y="477" width="149" height="146"/>
+	<SubTexture name="downPRESS0001" x="950" y="477" width="149" height="146"/>
+	<SubTexture name="downPRESS0002" x="1358" y="477" width="149" height="146"/>
+	<SubTexture name="downPRESS0003" x="1358" y="477" width="149" height="146"/>
+	<SubTexture name="left0000" x="5" y="404" width="154" height="157"/>
+	<SubTexture name="leftCONFIRM0000" x="1457" y="5" width="228" height="231"/>
+	<SubTexture name="leftCONFIRM0001" x="1690" y="5" width="228" height="231"/>
+	<SubTexture name="leftCONFIRM0002" x="1457" y="241" width="228" height="231"/>
+	<SubTexture name="leftCONFIRM0003" x="1457" y="241" width="228" height="231"/>
+	<SubTexture name="leftEND0000" x="1978" y="5" width="50" height="64"/>
+	<SubTexture name="leftGLOW0000" x="5" y="404" width="154" height="157"/>
+	<SubTexture name="leftHOLD0000" x="1978" y="143" width="50" height="44"/>
+	<SubTexture name="leftPRESS0000" x="1512" y="477" width="146" height="149"/>
+	<SubTexture name="leftPRESS0001" x="1512" y="477" width="146" height="149"/>
+	<SubTexture name="leftPRESS0002" x="1104" y="560" width="146" height="149"/>
+	<SubTexture name="leftPRESS0003" x="1104" y="560" width="146" height="149"/>
+	<SubTexture name="right0000" x="485" y="404" width="154" height="157"/>
+	<SubTexture name="rightCONFIRM0000" x="1690" y="241" width="226" height="230"/>
+	<SubTexture name="rightCONFIRM0001" x="734" y="242" width="226" height="230"/>
+	<SubTexture name="rightCONFIRM0002" x="965" y="242" width="226" height="230"/>
+	<SubTexture name="rightCONFIRM0003" x="965" y="242" width="226" height="230"/>
+	<SubTexture name="rightEND0000" x="1923" y="74" width="50" height="64"/>
+	<SubTexture name="rightGLOW0000" x="485" y="404" width="154" height="157"/>
+	<SubTexture name="rightHOLD0000" x="1923" y="192" width="50" height="44"/>
+	<SubTexture name="rightPRESS0000" x="644" y="477" width="148" height="151"/>
+	<SubTexture name="rightPRESS0001" x="644" y="477" width="148" height="151"/>
+	<SubTexture name="rightPRESS0002" x="797" y="477" width="148" height="151"/>
+	<SubTexture name="rightPRESS0003" x="797" y="477" width="148" height="151"/>
+	<SubTexture name="up0000" x="164" y="407" width="157" height="154"/>
+	<SubTexture name="upCONFIRM0000" x="734" y="5" width="236" height="232"/>
+	<SubTexture name="upCONFIRM0001" x="975" y="5" width="236" height="232"/>
+	<SubTexture name="upCONFIRM0002" x="1216" y="5" width="236" height="232"/>
+	<SubTexture name="upCONFIRM0003" x="1216" y="5" width="236" height="232"/>
+	<SubTexture name="upEND0000" x="1978" y="74" width="50" height="64"/>
+	<SubTexture name="upGLOW0000" x="1690" y="476" width="157" height="154"/>
+	<SubTexture name="upHOLD0000" x="1978" y="192" width="50" height="44"/>
+	<SubTexture name="upPRESS0000" x="326" y="407" width="153" height="150"/>
+	<SubTexture name="upPRESS0001" x="326" y="407" width="153" height="150"/>
+	<SubTexture name="upPRESS0002" x="1852" y="476" width="153" height="150"/>
+	<SubTexture name="upPRESS0003" x="1852" y="476" width="153" height="150"/>
+</TextureAtlas>

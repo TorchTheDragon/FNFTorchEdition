@@ -6,6 +6,9 @@ import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
+import Song.SwagSong;
+import Boyfriend.Boyfriend;
+import Character.Character;
 #if polymod
 import polymod.format.ParseRules.TargetSignatureElement;
 #end
@@ -26,6 +29,7 @@ class Note extends FlxSprite
 	public var modifiedByLua:Bool = false;
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
+	public var noteType:String = 'normal';
 
 	public var noteScore:Float = 1;
 
@@ -37,7 +41,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inCharter:Bool = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?isKey:Bool = false)
 	{
 		super();
 
@@ -50,10 +54,7 @@ class Note extends FlxSprite
 		x += 50;
 		// MAKE SURE ITS DEFINITELY OFF SCREEN?
 		y -= 2000;
-		if (inCharter)
-			this.strumTime = strumTime;
-		else 
-			this.strumTime = Math.round(strumTime);
+		this.strumTime = strumTime;
 
 		if (this.strumTime < 0 )
 			this.strumTime = 0;
@@ -96,6 +97,34 @@ class Note extends FlxSprite
 
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
+
+			case "torchn'trey":
+				if(isKey) { 
+					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
+				}
+				else {
+					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
+				}
+
+					animation.addByPrefix('greenScroll', 'up0');
+					animation.addByPrefix('redScroll', 'right0');
+					animation.addByPrefix('blueScroll', 'down0');
+					animation.addByPrefix('purpleScroll', 'left0');
+
+					animation.addByPrefix('purpleholdend', 'leftEND');
+					animation.addByPrefix('greenholdend', 'upEND');
+					animation.addByPrefix('redholdend', 'rightEND');
+					animation.addByPrefix('blueholdend', 'downEND');
+
+					animation.addByPrefix('purplehold', 'leftHOLD');
+					animation.addByPrefix('greenhold', 'upHOLD');
+					animation.addByPrefix('redhold', 'rightHOLD');
+					animation.addByPrefix('bluehold', 'downHOLD');
+
+				setGraphicSize(Std.int(width * 0.7));
+				updateHitbox();
+				antialiasing = true;
+
 			default:
 				frames = Paths.getSparrowAtlas('NOTE_assets');
 
@@ -109,10 +138,12 @@ class Note extends FlxSprite
 				animation.addByPrefix('redholdend', 'red hold end instance 1');
 				animation.addByPrefix('blueholdend', 'blue hold end instance 1');
 
+
 				animation.addByPrefix('purplehold', 'purple hold piece instance 1');
 				animation.addByPrefix('greenhold', 'green hold piece instance 1');
 				animation.addByPrefix('redhold', 'red hold piece instance 1');
 				animation.addByPrefix('bluehold', 'blue hold piece instance 1');
+
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
@@ -161,6 +192,7 @@ class Note extends FlxSprite
 				case 0:
 					animation.play('purpleholdend');
 			}
+			
 
 			updateHitbox();
 
@@ -180,8 +212,9 @@ class Note extends FlxSprite
 					case 2:
 						prevNote.animation.play('greenhold');
 					case 3:
-						prevNote.animation.play('redhold');
+						prevNote.animation.play('redhold');	
 				}
+				
 
 
 				if(FlxG.save.data.scrollSpeed != 1)
