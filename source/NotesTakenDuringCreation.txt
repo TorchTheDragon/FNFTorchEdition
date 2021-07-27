@@ -35,13 +35,11 @@ case 'normal':
 							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
 						}
 
-This da Bob and Bossip code.... so.... credit for them. I just put here to have it on deck. It for two NOTE_assets, one for player and one for enemy.
-
+This da Bob and Bossip code.... so.... credit for them. I just put here to have it on deck.
+It for two NOTE_assets, one for player and one for enemy.
 Put in PlayState.hx and edit lines 1736 - 1768. Good Luck future me!
 
 Worked for me Past Me, thanks, but now the lines are wrong lol
-
-
 
 
 
@@ -49,29 +47,33 @@ public var color1:FlxColor = FlxColor.RED;
 public var color2:FlxColor = FlxColor.LIME;
 
 This is for healthbar (put into PlayState.hx) - I did already
-
 ^ I use those variables in the SONG.player1 and SONG.player2 cases.
 
 healthBar.createFilledBar(color1, color2);
 
 Might use color1 and color2 variables for song position color (possibly just color2)
-
 What I don't understand is that I made color1 for player2 and color2 for player1, may switch later.
+I also need to test if 'color1 = 0xFFFFFF' work with the FlxColor tag thingy. 
+I know that 'color1 = FlxColor.CYAN' works, I just wanna know if the Hex code format works.
+ Imma test now actually, idk why i putting this down as notes.
 
-I also need to test if 'color1 = 0xFFFFFF' work with the FlxColor tag thingy, I know that 'color1 = FlxColor.CYAN' works, I just wanna know if the Hex code format works. Imma test now actually, idk why i putting this down as notes.
+Wait, it wants to use 8 digit Hex, not 6, maybe if I add FF in front to make full not transparent?
 
-wait, hex is 8 character, not 6, maybe if I add FF in front to make full not transparent? welp, when compiling, got no error so far, now waiting to load so i can check if color of healthBar changed and songPos. Using Trey colors for example so, here his color 0xFF00FFE5. 
+Welp, when compiling, got no error so far, now waiting to load so i can check if color of healthBar changed and songPos.
+Using Trey colors for example so, here his color 0xFF00FFE5. 
 
 It half worked, it changed the healthBar color, but not songPos. Imma see if I can fix that
 
+I did end up fixing that lol
 
 
 
-
-Need to create other characters, may end up replacing Torch with one of my new characters, his nickname is Pyre. I may also have to re-remaster Trey.
-
+Need to create other characters, may end up replacing Torch with one of my new characters, his nickname is Pyre.
+I may also have to re-remaster Trey.
 I will definitely have to create new arrows tho
 
-
-
-Decided to not add Pyre, but may redo Torch and redo the arrows to better match the characters. I am however going to be working on two other characters for my friends, one of which is for Merricide, the second one is going to be a surprise for now. One thing I did actually do though was organize the characters in the selection list so it was easier for me to test them in the charting menu, mainly grouped the people together like all bf's, all gf's, the parents, yada yada
+Decided to not add Pyre, but may redo Torch and redo the arrows to better match the characters.
+I am however going to be working on two other characters for my friends, one of which is for Merricide, the second one is going to be a surprise for now.
+One thing I did actually do though was organize the characters in the selection list.
+This was so it was easier for me to test them in the charting menu.
+I mainly grouped the people together like all bf's, all gf's, the parents, yada yada
