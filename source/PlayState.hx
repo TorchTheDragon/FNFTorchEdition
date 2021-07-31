@@ -1656,11 +1656,17 @@ class PlayState extends MusicBeatState
 
 					//var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
 					var sustainNote:Note;
-					if (gottaHitNote) {
-						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
-					} else {
-						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
+					if (SONG.player2 == 'trey') {
+						if (gottaHitNote) {
+							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
+						} else {
+							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
+						}
 					}
+					else {
+						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
+					}
+					
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
 
@@ -1787,7 +1793,7 @@ class PlayState extends MusicBeatState
 						}
 
 				case "torchn'trey":
-					if (player == 0)
+					if (SONG.player2 == 'trey' && player == 0)
 						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
 					else 
 						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
