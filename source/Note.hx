@@ -13,6 +13,7 @@ import Character.Character;
 import polymod.format.ParseRules.TargetSignatureElement;
 #end
 import PlayState;
+import PlayState.SONG;
 
 using StringTools;
 
@@ -99,7 +100,7 @@ class Note extends FlxSprite
 				updateHitbox();
 
 			case "torchn'trey":
-				if(isKey) { 
+				if(isKey && SONG.player2 == 'trey') { 
 					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
 				}
 				else {
