@@ -16,10 +16,10 @@ Then, after the super.update at the bottom, add this entire set of code:
 		}
 
 *FreeplayState.hx* - 
-Search for var icon:HealthIcon and right underneath it put icon.sprTracker = songText;
+Search for var icon:HealthIcon and right underneath it put "icon.sprTracker = songText;"
 
 *HealthIcon.hx* - 
-Right above the new function add the variable "public var sprTracker:FlxSprite;"\
+Right above the new function add the variable "public var sprTracker:FlxSprite;"
 Then, at the bottom, underneath super.update add this if statment:
 if (sprTracker != null)
 			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);
