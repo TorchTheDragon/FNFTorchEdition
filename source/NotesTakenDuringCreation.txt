@@ -7,7 +7,7 @@ So, I will quickly list were those variables are and should go.
 Firstly, the sprTracker variable:
 
 *Boyfriend.hx* - 
-Put inside of "class Boyfriend extends Character" underneath the "public var stunned:Bool = false;" but above the new funtion.
+Put "public var sprTracker:FlxSprite;" inside of "class Boyfriend extends Character" underneath the "public var stunned:Bool = false;" but above the new funtion.
 Then, after the super.update at the bottom, add this entire set of code:
  if (sprTracker != null)
 		{
