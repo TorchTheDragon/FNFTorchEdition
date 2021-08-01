@@ -1,3 +1,39 @@
+**IMPORTANT**
+
+For anyone using the Character Menu, please read this.
+
+I have been notified through a YouTube comment that compiling the CharMenu.hx alone wont work, and thats because I forgot to mention where I had put some variables.
+So, I will quickly list were those variables are and should go.
+Firstly, the sprTracker variable:
+
+*Boyfriend.hx* - 
+Put inside of "class Boyfriend extends Character" underneath the "public var stunned:Bool = false;" but above the new funtion.
+Then, after the super.update at the bottom, add this entire set of code:
+ if (sprTracker != null)
+		{
+			x = (sprTracker.y * 2) + 90 - 350;
+			y = FlxG.height / 3 - 68;
+		}
+
+*FreeplayState.hx* - 
+Search for var icon:HealthIcon and right underneath it put icon.sprTracker = songText;
+
+*HealthIcon.hx* - 
+Right above the new function add the variable "public var sprTracker:FlxSprite;"\
+Then, at the bottom, underneath super.update add this if statment:
+if (sprTracker != null)
+			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);
+
+That should be all for the "sprTracker" variable, now for the "hasPlayedOnce" variable.
+
+*PlayState.hx* - 
+All you have to do is add "public static var hasPlayedOnce:Bool = false;" below "public static var noteBools:Array<Bool> = [false, false, false, false];"
+
+**END OF IMPORTANT INFORMATION (for now)
+
+
+
+
 case 'normal':
 					if (SONG.song.toLowerCase() == 'split' && player == 0)
 						babyArrow.frames = Paths.getSparrowAtlas('night/NOTEKEY_assets', 'shared');
@@ -85,3 +121,8 @@ Firstly, I am working on making Torch and Trey's animations a little smoother as
 Secondly, I managed to add the variable "SONG.player2" into the Note.hx. 
 To do that, just import PlayState.SONG. I didn't think it was that easy lol.
 Also, if you want something like the Bob and Bosip 'Split' notes, look for anything that says "SONG.player2 == 'trey'" and you'll find all the code you need.
+
+
+
+
+
