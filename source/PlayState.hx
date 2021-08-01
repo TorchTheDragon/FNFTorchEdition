@@ -2617,13 +2617,25 @@ class PlayState extends MusicBeatState
 							camZooming = true;
 
 						var altAnim:String = "";
+
+						/*This will be for later when I decide to try and add more than one alt
+						
+						var twoPersonAnim:String = "";
+						
+						In case of three people
+						var firstAndSecondAnim:String = "";
+						var firstAndLastAnim:String = "";
+						var secondAndLastAnim:String = "";
+						var allThreeAnim:String = ""
+						
+						Just putting these here cuz I have plans*/
 	
 						if (SONG.notes[Math.floor(curStep / 16)] != null)
 						{
 							if (SONG.notes[Math.floor(curStep / 16)].altAnim)
 								altAnim = '-alt';
 						}
-	
+//Alt Animation Location
 						switch (Math.abs(daNote.noteData))
 						{
 							case 2:
