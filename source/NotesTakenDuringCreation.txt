@@ -126,3 +126,6 @@ Also, if you want something like the Bob and Bosip 'Split' notes, look for anyth
 
 
 
+I'm making a build of my mod for now, but just to leat y'all know, the only things that are really changed are healthbar colors, and no not all are changed as I am still doing some.
+I did change the enemy in Dadbattle to Trey as a test, but I forgot to save the note style, so, if you want to test out the new notes, make sure Trey is the enemy and the Note Type is "torchn'trey"
+As a reminder, the note selection is in the 7 Debug Menu.
