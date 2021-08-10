@@ -5,4 +5,5 @@ If you want to see what I have done, inside the Source folder I have a file call
 
 
 Gamebana page for Character Selection: https://gamebanana.com/tuts/14218
-Video for Tutorial on Character Selection:https://youtu.be/66AcG4_wd6E
+
+Video for Tutorial on Character Selection: https://youtu.be/66AcG4_wd6E

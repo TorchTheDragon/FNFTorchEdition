@@ -32,8 +32,6 @@ All you have to do is add "public static var hasPlayedOnce:Bool = false;" below 
 **END OF IMPORTANT INFORMATION (for now)
 
 
-
-
 case 'normal':
 					if (SONG.song.toLowerCase() == 'split' && player == 0)
 						babyArrow.frames = Paths.getSparrowAtlas('night/NOTEKEY_assets', 'shared');
@@ -78,7 +76,6 @@ Put in PlayState.hx and edit lines 1736 - 1768. Good Luck future me!
 Worked for me Past Me, thanks, but now the lines are wrong lol
 
 
-
 public var color1:FlxColor = FlxColor.RED;
 public var color2:FlxColor = FlxColor.LIME;
 
@@ -103,7 +100,6 @@ It half worked, it changed the healthBar color, but not songPos. Imma see if I c
 I did end up fixing that lol
 
 
-
 Need to create other characters, may end up replacing Torch with one of my new characters, his nickname is Pyre.
 I may also have to re-remaster Trey.
 I will definitely have to create new arrows tho
@@ -115,17 +111,13 @@ This was so it was easier for me to test them in the charting menu.
 I mainly grouped the people together like all bf's, all gf's, the parents, yada yada
 
 
-
-
 Firstly, I am working on making Torch and Trey's animations a little smoother as well as tryna figure out how imma do Merricide's character. 
 Secondly, I managed to add the variable "SONG.player2" into the Note.hx. 
 To do that, just import PlayState.SONG. I didn't think it was that easy lol.
 Also, if you want something like the Bob and Bosip 'Split' notes, look for anything that says "SONG.player2 == 'trey'" and you'll find all the code you need.
 
 
-
-
-
-I'm making a build of my mod for now, but just to leat y'all know, the only things that are really changed are healthbar colors, and no not all are changed as I am still doing some.
-I did change the enemy in Dadbattle to Trey as a test, but I forgot to save the note style, so, if you want to test out the new notes, make sure Trey is the enemy and the Note Type is "torchn'trey"
+I'm making a build of my mod for now, but just to let y'all know, the only things that are really changed are healthbar colors, and no not all are changed yet.
+I did change the enemy in Dadbattle to Trey as a test, but I forgot to save the note style.
+If you want to test out the new notes, make sure Trey is the enemy and the Note Type is "torchn'trey"
 As a reminder, the note selection is in the 7 Debug Menu.
