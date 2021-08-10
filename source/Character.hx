@@ -64,7 +64,7 @@ class Character extends FlxSprite
 				}
 
 				animation.addByPrefix('firstDeath', 'Dying', 24, false);
-				animation.addByPrefix('deathLoop', 'Dead', 24, false);
+				animation.addByPrefix('deathLoop', 'Dead', 24, true);
 				animation.addByPrefix('deathConfirm', 'Retry', 24, false);
 
 				animation.addByPrefix('scared', 'Nervous', 24);
