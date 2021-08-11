@@ -1,3 +1,8 @@
+**IMPORTANT**
+
+**END OF IMPORTANT SECTION**
+
+
 Once I edit this mod more, I will add some shit to this readme file, but for now, imma just put what I want here
 
 
