@@ -264,7 +264,7 @@ class FreeplayState extends MusicBeatState
 			PlayState.storyDifficulty = curDifficulty;
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
-			FlxG.switchState(new CharMenu());
+			//FlxG.switchState(new CharMenu()); //Character Menu State temp disabled till I figure out a new and better way
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
