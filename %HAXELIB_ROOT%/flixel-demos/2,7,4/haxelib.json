@@ -1,0 +1,11 @@
+{
+    "name": "flixel-demos",
+    "url": "https://github.com/HaxeFlixel/flixel-demos",
+    "license": "MIT",
+    "tags": ["game", "openfl", "flash", "neko", "cpp", "android", "ios", "demo", "cross"],
+    "description": "Demo Projects for HaxeFlixel",
+    "version": "2.7.4",
+    "releasenote": "Added Lime XSD schema references to enable completion.",
+    "contributors": ["haxeflixel", "Gama11"],
+    "dependencies": {}
+}

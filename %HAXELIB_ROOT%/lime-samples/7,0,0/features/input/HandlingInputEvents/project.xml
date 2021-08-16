@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Handling Input Events" package="org.openfl.lime.handlinginputevents" version="1.0.0" company="OpenFL" />
+	<app main="Main" path="Export" file="HandlingInputEvents" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="lime" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>

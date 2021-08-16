@@ -1,0 +1,11 @@
+{
+  "name": "lime-samples",
+  "url": "http://github.com/openfl/lime-samples",
+  "license": "MIT",
+  "tags": [ ],
+  "description": "Lime samples",
+  "version": "7.0.0",
+  "releasenote": "Updated for Lime 7, minor fixes",
+  "contributors": [ "singmajesty" ],
+  "dependencies": {}
+}

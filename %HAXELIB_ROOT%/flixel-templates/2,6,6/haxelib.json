@@ -1,0 +1,11 @@
+{
+    "name": "flixel-templates",
+    "url": "https://github.com/HaxeFlixel/flixel-templates",
+    "license": "MIT",
+    "tags": ["game", "openfl", "flash", "neko", "cpp", "android", "ios", "cross", "vscode"],
+    "description": "Templates for HaxeFlixel projects",
+    "version": "2.6.6",
+    "releasenote": "Added Lime XSD schema references to enable completion.",
+    "contributors": ["haxeflixel", "Gama11"],
+    "dependencies": {}
+}

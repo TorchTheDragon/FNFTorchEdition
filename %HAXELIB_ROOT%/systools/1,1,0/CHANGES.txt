@@ -1,0 +1,62 @@
+2013-05-28
+	Updated to Neko 2 and Hxcpp
+
+2009-03-10
+	Changed systools.win.Tools to not crash on non-Windows unless methods are
+	actually called. [IT]
+    0.17 Recompiled and uploaded to haxeLib to include replaceExeIcon() changes. [IT]
+    
+2008-10-08
+	Added optional iconResourceID to systools.win.Tools.replaceExeIcon(). [IT]
+	
+2008-10-02
+	0.15 Rebuilt Windows .ndll - some odd build compatability crept in 
+	last time around making it so the DLL didn't load on Win98. Now fixed. [IT]
+	
+2008-02-14
+    Added quotes round browser URL in Browser.launchURL() to deal with spaces in Windows urls. [IT]
+	
+2007-06-15
+	Added systools.Display.getScreenSize() for Mac and Windows [IT]
+
+2007-06-12 Beta 0.0.11 [IT]
+
+2007-06-12
+	Added SWFInfo (cross-platform) [IT]
+	
+2007-04-24
+    Added FileUtils.getTempFolder() for Windows, Mac, Linux [IT]
+
+2007-04-18
+    Added Browser.launchURL() for Windows, Mac [IT]
+
+2007-03-14
+    Migrated win/registry.c to use non-deprecated Win32 functions (for closer Vista compatability).
+    Corrected Registry.getValue() to return a null rather than the string 'null' when the key doesn't
+    exist. [IT]
+    
+2007-03-09
+	Moved systools.win.Tools.getScreenSize() to systools.win.Display. [IT]
+
+2007-03-08
+	Added systools.win.Display and supporting code for changing screen mode on Windows. [IT]
+	
+2006-11-28 
+	Initial Linux port: 
+	Clipboard and Dialogs using GTK
+	Registry using gconf
+
+2006-10-20: Beta 0.0.8
+	Implemented create process for Windows
+
+2006-10-06: Beta 0.0.7
+	Fixed 'openDialog' returning faulty first entry on 
+	multiple files selection.
+	Fixed .ndll not loading correctly with OSX 10.3.9
+	
+2006-09-29: Beta 0.0.6
+	Implemented exe icon replacement for Windows
+	Implemented browse for folder
+
+2006-09-28: Beta 0.0.5
+	APIs now returning haXe strings

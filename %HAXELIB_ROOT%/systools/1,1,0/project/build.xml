@@ -1,0 +1,56 @@
+<xml>
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+<set name="platform_dir" value="./mac/" if="macos"/>
+<set name="platform_dir" value="./win/" if="windows"/>
+<set name="platform_dir" value="./linux/" if="linux"/>
+<set name="tool" value="exe" unless="iphone"/>
+<set name="tool" value="static" if="iphone"/>
+
+<files id="systools" dir="./src">
+	<compilerflag value="-I./src"/>
+	<compilerflag value="$(pkg-config --libs --cflags gtk+-2.0)" if="linux"/>
+	<compilerflag value="$(pkg-config --libs --cflags gconf-2.0)" if="linux"/>
+	<file name="api.cpp" />
+	<file name="${platform_dir}clipboard.c" />
+	<file name="${platform_dir}dialogs.c" />
+	<file name="${platform_dir}fileutils.c" />
+	<file name="${platform_dir}misc.c" />
+	<file name="${platform_dir}registry.c" />
+	<file name="${platform_dir}browser.c" unless="linux" />
+	<file name="${platform_dir}display.c" unless="linux" />
+	<file name="${platform_dir}menus.c" if="windows" />
+	<file name="${platform_dir}win.c" if="windows" />
+</files>
+
+<files id="mac" dir="./src">
+	<compilerflag value="-I./src"/>
+	<file name="api.cpp" />
+	<file name="mac/browser.m" />
+	<file name="mac/clipboard.m" />
+	<file name="mac/dialogs.m" />
+	<file name="mac/display.m" />
+	<file name="mac/fileutils.m" />
+	<file name="mac/misc.m" />
+	<file name="mac/registry.m" />
+</files>
+
+<target id="systools" output="${LIBPREFIX}systools${DBG}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+  <ext value=".ndll" unless="mobile"/>
+  <files id="systools" unless="macos"/>
+  <files id="mac" if="macos"/>
+
+  <lib name="kernel32.lib" if="windows"/>
+  <lib name="user32.lib" if="windows"/>
+  <lib name="comdlg32.lib" if="windows"/>
+  <lib name="advapi32.lib" if="windows"/>
+  <lib name="shell32.lib" if="windows"/>
+  <lib name="-lgtk+2" if="linux"/>
+  <lib name="-lgconf-2.0" if="linux"/>
+  <vflag name="-framework" value="IOKit" if="macos"/>
+  <vflag name="-framework" value="Foundation" if="macos"/>
+  <vflag name="-framework" value="Carbon" if="macos"/>
+  <outdir name="../ndll/${BINDIR}"/>
+</target>
+
+<target id="default"> <target id="systools" /> </target>
+</xml>
