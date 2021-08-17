@@ -33,6 +33,7 @@ class StoryMenuState extends MusicBeatState
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
 		['Senpai', 'Roses', 'Thorns']
 	];
+	var curChar:Int = 0;
 	var curDifficulty:Int = 1;
 
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
@@ -68,6 +69,9 @@ class StoryMenuState extends MusicBeatState
 
 	var grpLocks:FlxTypedGroup<FlxSprite>;
 
+	var characterSelectors:FlxGroup;
+	var leftCharArrow:FlxSprite;
+	var rightCharArrow:FlxSprite;
 	var difficultySelectors:FlxGroup;
 	var sprDifficulty:FlxSprite;
 	var leftArrow:FlxSprite;
@@ -152,6 +156,7 @@ class StoryMenuState extends MusicBeatState
 
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
+		difficultySelectors.visible = false;
 
 		trace("Line 124");
 
@@ -184,6 +189,23 @@ class StoryMenuState extends MusicBeatState
 		add(yellowBG);
 		add(grpWeekCharacters);
 
+		characterSelectors = new FlxGroup();
+		add(characterSelectors);
+
+		leftCharArrow = new FlxSprite(400, 200);
+		leftCharArrow.frames = ui_tex;
+		leftCharArrow.animation.addByPrefix('idle', "arrow left");
+		leftCharArrow.animation.addByPrefix('press', "arrow push left");
+		leftCharArrow.animation.play('idle');
+		characterSelectors.add(leftCharArrow);
+
+		rightCharArrow = new FlxSprite(850, 200);
+		rightCharArrow.frames = ui_tex;
+		rightCharArrow.animation.addByPrefix('idle', "arrow right");
+		rightCharArrow.animation.addByPrefix('press', "arrow push right");
+		rightCharArrow.animation.play('idle');
+		characterSelectors.add(rightCharArrow);
+
 		txtTracklist = new FlxText(FlxG.width * 0.05, yellowBG.x + yellowBG.height + 100, 0, "Tracks", 32);
 		txtTracklist.alignment = CENTER;
 		txtTracklist.font = rankText.font;
@@ -211,8 +233,6 @@ class StoryMenuState extends MusicBeatState
 		txtWeekTitle.x = FlxG.width - (txtWeekTitle.width + 10);
 
 		// FlxG.watch.addQuick('font', scoreText.font);
-
-		difficultySelectors.visible = weekUnlocked[curWeek];
 
 		grpLocks.forEach(function(lock:FlxSprite)
 		{
@@ -266,32 +286,63 @@ class StoryMenuState extends MusicBeatState
 				}
 
 				if (controls.RIGHT)
-					rightArrow.animation.play('press')
+					{
+						rightArrow.animation.play('press');
+						rightCharArrow.animation.play('press');
+					}
 				else
-					rightArrow.animation.play('idle');
-
+					{
+						rightArrow.animation.play('idle');
+						rightCharArrow.animation.play('idle');	
+					}
+					
 				if (controls.LEFT)
-					leftArrow.animation.play('press');
+					{
+						leftArrow.animation.play('press');
+						leftCharArrow.animation.play('press');
+					}
 				else
-					leftArrow.animation.play('idle');
+					{
+						leftArrow.animation.play('idle');
+						leftCharArrow.animation.play('idle');
+					}
+
 
 				if (controls.RIGHT_P)
-					changeDifficulty(1);
+					{
+						if (difficultySelectors.visible)
+							changeDifficulty(1);
+						else 
+							changeCharacter(1);
+					}
 				if (controls.LEFT_P)
-					changeDifficulty(-1);
+					{
+						if (difficultySelectors.visible)
+							changeDifficulty(-1);
+						else 
+							changeCharacter(-1);
+					}
 			}
 
 			if (controls.ACCEPT)
 			{
-				selectWeek();
+				if (difficultySelectors.visible)
+					selectWeek();
+				else
+					changeSelection();
 			}
 		}
 
 		if (controls.BACK && !movedBack && !selectedWeek)
 		{
-			FlxG.sound.play(Paths.sound('cancelMenu'));
-			movedBack = true;
-			FlxG.switchState(new MainMenuState());
+			if (difficultySelectors.visible)
+				changeSelection();
+			else
+			{
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+				movedBack = true;
+				FlxG.switchState(new MainMenuState());
+			}
 		}
 
 		super.update(elapsed);
@@ -310,14 +361,21 @@ class StoryMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
-				grpWeekCharacters.members[1].animation.play('bfConfirm');
+				
+				if (curChar == 0)
+					grpWeekCharacters.members[1].animation.play('bfConfirm');
+				else if (curChar == 1)
+					grpWeekCharacters.members[1].animation.play('picoConfirm');
+				else if (curChar == 2)
+					grpWeekCharacters.members[1].animation.play('torchConfirm');
+				
+				//grpWeekCharacters.members[1].animation.play('bfConfirm');
 				stopspamming = true;
 			}
 
 			PlayState.storyPlaylist = weekData[curWeek];
 			PlayState.isStoryMode = true;
 			selectedWeek = true;
-
 
 			PlayState.storyDifficulty = curDifficulty;
 
@@ -335,6 +393,7 @@ class StoryMenuState extends MusicBeatState
 			PlayState.goods = 0;
 			PlayState.campaignMisses = 0;
 			PlayState.SONG = Song.loadFromJson(poop, PlayState.storyPlaylist[0]);
+			PlayState.storyChar = curChar;
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
@@ -343,6 +402,34 @@ class StoryMenuState extends MusicBeatState
 			});
 		}
 	}
+
+	function changeCharacter(change:Int = 0):Void
+		{
+			curChar += change;
+	
+			if (curChar < 0)
+				curChar = 2;
+			if (curChar > 2)
+				curChar = 0;
+	
+			switch (curChar)
+			{
+				case 0:
+					{
+						grpWeekCharacters.members[1].setCharacter('bf');
+					}
+				case 1:
+					{
+						grpWeekCharacters.members[1].setCharacter('pico');	
+					}			
+				case 2:
+					{
+						grpWeekCharacters.members[1].setCharacter('torch');
+					}
+			}
+	
+			FlxG.sound.play(Paths.sound('scrollMenu'));
+		}
 
 	function changeDifficulty(change:Int = 0):Void
 	{
@@ -383,6 +470,25 @@ class StoryMenuState extends MusicBeatState
 
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
+
+	function changeSelection()
+		{
+	
+			if (difficultySelectors.visible)
+			{
+				difficultySelectors.visible = false;
+				characterSelectors.visible = true;
+	
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+			}
+			else
+			{
+				difficultySelectors.visible = true;
+				characterSelectors.visible = false;
+	
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+			}
+		}
 
 	function changeWeek(change:Int = 0):Void
 	{

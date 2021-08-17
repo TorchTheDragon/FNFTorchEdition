@@ -85,6 +85,7 @@ class PlayState extends MusicBeatState
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
+	public static var storyChar:Int = 0;
 	public static var storyDifficulty:Int = 1;
 	public static var weekSong:Int = 0;
 	public static var weekScore:Int = 0;
@@ -810,6 +811,23 @@ class PlayState extends MusicBeatState
 		{
 			case 'bf':
 				color2 = 0xFF31B0D1;
+				
+				if (storyChar == 0)
+					{
+						remove(boyfriend);
+						boyfriend = new Boyfriend(770, 450, 'bf');
+					}
+				else if (storyChar == 1)
+					{
+						remove(boyfriend);
+						boyfriend = new Boyfriend(770, 450, 'bf-christmas');
+					}
+				else if (storyChar == 2)
+					{
+						remove(boyfriend);
+						boyfriend = new Boyfriend(770, 450, 'torch');
+					} // Failed Idea
+					
 			case 'bf-christmas':
 				color2 = 0xFF31B0D1;
 			case 'bf-pixel':
@@ -871,8 +889,17 @@ class PlayState extends MusicBeatState
 				color1 = 0xFFFF3C6E;
 		}
 
+		if (storyChar == 1)
+			{
+				SONG.player1 = 'pico';
+				color2 = 0xFFB7D855;
+			}
+		else if (storyChar == 2)
+			{
+				SONG.player1 = 'torch';
+				color2 = 0xFF9B0000;
+			}
 
-		
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
 
 		// REPOSITIONING PER STAGE

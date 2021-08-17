@@ -13,6 +13,7 @@ import flixel.util.FlxColor;
 import lime.utils.Assets;
 import lime.system.System;
 import HealthIcon.HealthIcon;
+import Song.SwagSong;
 
 #if sys
 import sys.io.File;
@@ -37,12 +38,16 @@ class FreeplayState extends MusicBeatState
 	var scoreBG:FlxSprite;
 
 	var selector:FlxText;
-	var curSelected:Int = 0;
-	var curDifficulty:Int = 1;
+	public static var curSelected:Int = 0;
+	public static var curDifficulty:Int = 1;
+	public static var curCharacter:Int = 0;
 
 	var scoreText:FlxText;
 	var comboText:FlxText;
 	var diffText:FlxText;
+	var diffCalcText:FlxText;
+	var charText:FlxText;
+	var charIcon:FlxSprite;
 	var lerpScore:Int = 0;
 	var intendedScore:Int = 0;
 	var combo:String = '';
@@ -115,7 +120,7 @@ class FreeplayState extends MusicBeatState
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 		// scoreText.alignment = RIGHT;
 
-		var scoreBG:FlxSprite = new FlxSprite(scoreText.x - 6, 0).makeGraphic(Std.int(FlxG.width * 0.35), 66, 0xFF000000);
+		var scoreBG:FlxSprite = new FlxSprite(scoreText.x - 6, 0).makeGraphic(Std.int(FlxG.width * 0.35), 150, 0xFF000000);
 		scoreBG.alpha = 0.6;
 		add(scoreBG);
 
@@ -123,9 +128,31 @@ class FreeplayState extends MusicBeatState
 		diffText.font = scoreText.font;
 		add(diffText);
 
+		diffCalcText = new FlxText(scoreText.x, scoreText.y + 66, 0, "", 24);
+		diffCalcText.font = scoreText.font;
+		add(diffCalcText);
+
 		comboText = new FlxText(diffText.x + 100, diffText.y, 0, "", 24);
 		comboText.font = diffText.font;
 		add(comboText);
+
+		charText = new FlxText(comboText.x - 50, comboText.y + 65, 0, "Tab to switch", 24);
+		charText.font = comboText.font;
+		add(charText);
+		
+		charIcon = new HealthIcon('bf', true);
+		switch (curCharacter)
+		{
+			case 0:
+				charIcon.animation.play('bf');
+			case 1:
+				charIcon.animation.play('pico');
+			case 2:
+				charIcon.animation.play('torch');
+		}
+		charIcon.setPosition(charText.x - 100, comboText.y + 10);
+		charIcon.scale.set(0.5, 0.5);
+		add(charIcon);
 
 		add(scoreText);
 
@@ -244,6 +271,9 @@ class FreeplayState extends MusicBeatState
 			FlxG.switchState(new MainMenuState());
 		}
 
+		if (FlxG.keys.justPressed.TAB)
+			changeChar();
+
 		if (accepted)
 		{
 			// adjusting the song name to be compatible
@@ -262,6 +292,7 @@ class FreeplayState extends MusicBeatState
 			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName);
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty;
+			PlayState.storyChar = curCharacter;
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
 			//FlxG.switchState(new CharMenu()); //Character Menu State temp disabled till I figure out a new and better way
@@ -292,6 +323,24 @@ class FreeplayState extends MusicBeatState
 
 		diffText.text = CoolUtil.difficultyFromInt(curDifficulty).toUpperCase();
 	}
+
+	function changeChar()
+		{
+			curCharacter++;
+	
+			if (curCharacter > 2)
+				curCharacter = 0;
+	
+			switch (curCharacter)
+			{
+				case 0:
+					charIcon.animation.play('bf');
+				case 1:
+					charIcon.animation.play('pico');
+				case 2:
+					charIcon.animation.play('torch');
+			}
+		}
 
 	function changeSelection(change:Int = 0)
 	{
