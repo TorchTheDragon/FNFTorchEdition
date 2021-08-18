@@ -9,15 +9,15 @@ class Ratings
 			ranking = "BotPlay";
 
         if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods == 0) // Marvelous (SICK) Full Combo
-            ranking = "(MFC)";
+            ranking = "(Full Combo! Only Sicks!)";
         else if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
-            ranking = "(GFC)";
+            ranking = "(Full Combo. Great Hits!)";
         else if (PlayState.misses == 0) // Regular FC
-            ranking = "(FC)";
+            ranking = "(Full Combo)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(SDCB)";
+            ranking = "(Single Digit Combo Break)";
         else
-            ranking = "(Clear)";
+            ranking = "(I guess you pass...)";
 
         // WIFE TIME :)))) (based on Wife3)
 
@@ -48,37 +48,37 @@ class Ratings
                 switch(i)
                 {
                     case 0:
-                        ranking += " AAAAA";
+                        ranking += " Perfect!!!!";
                     case 1:
-                        ranking += " AAAA:";
+                        ranking += " Perfect!!!";
                     case 2:
-                        ranking += " AAAA.";
+                        ranking += " Perfect!!";
                     case 3:
-                        ranking += " AAAA";
+                        ranking += " Perfect!";
                     case 4:
-                        ranking += " AAA:";
+                        ranking += " Perfect";
                     case 5:
-                        ranking += " AAA.";
+                        ranking += " Incredible!!!";
                     case 6:
-                        ranking += " AAA";
+                        ranking += " Incredible!!";
                     case 7:
-                        ranking += " AA:";
+                        ranking += " Incredible!";
                     case 8:
-                        ranking += " AA.";
+                        ranking += " Incredible";
                     case 9:
-                        ranking += " AA";
+                        ranking += " Amazing!!!";
                     case 10:
-                        ranking += " A:";
+                        ranking += " Amazing!!";
                     case 11:
-                        ranking += " A.";
+                        ranking += " Amazing!";
                     case 12:
-                        ranking += " A";
+                        ranking += " Amazing";
                     case 13:
-                        ranking += " B";
+                        ranking += " Good Enough";
                     case 14:
-                        ranking += " C";
+                        ranking += " Crap";
                     case 15:
-                        ranking += " D";
+                        ranking += " Fucking Failing";
                 }
                 break;
             }
