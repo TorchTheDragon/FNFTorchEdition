@@ -259,21 +259,39 @@ class StoryMenuState extends MusicBeatState
 					}
 
 					if (gamepad.pressed.DPAD_RIGHT)
-						rightArrow.animation.play('press')
+						{
+						rightArrow.animation.play('press');
+						rightCharArrow.animation.play('press');
+						}
 					else
+						{
 						rightArrow.animation.play('idle');
+						rightCharArrow.animation.play('idle');
+						}
 					if (gamepad.pressed.DPAD_LEFT)
+						{
 						leftArrow.animation.play('press');
+						leftCharArrow.animation.play('press');
+						}
 					else
+						{
 						leftArrow.animation.play('idle');
+						leftCharArrow.animation.play('press');
+						}
 
 					if (gamepad.justPressed.DPAD_RIGHT)
 					{
-						changeDifficulty(1);
+						if (difficultySelectors.visible)
+							changeDifficulty(1);
+						else 
+							changeCharacter(1);
 					}
 					if (gamepad.justPressed.DPAD_LEFT)
 					{
-						changeDifficulty(-1);
+						if (difficultySelectors.visible)
+							changeDifficulty(-1);
+						else 
+							changeCharacter(-1);
 					}
 				}
 
