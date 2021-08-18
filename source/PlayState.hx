@@ -860,6 +860,10 @@ class PlayState extends MusicBeatState
 			case 'dad':
 				camPos.x += 400;
 				color1 = 0xFFAF66CE;
+			case 'mom':
+				color1 = 0xFFD8558E;
+			case 'mom-car':
+				color1 = 0xFFD8558E;
 			case 'trey':
 				dad.y += 50;
 				color1 = 0xFF00FFE5;
@@ -871,7 +875,7 @@ class PlayState extends MusicBeatState
 				color1 = 0xFFB7D855;
 			case 'parents-christmas':
 				dad.x -= 500;
-				color1 = 0xFF90395E;
+				color1 = 0xFFD8558E;
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
