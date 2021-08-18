@@ -1,6 +1,0 @@
--cp ../src
--swf ../bin/flash/application.swf
--lib lime
--main Main
--swf-version 19
--debug

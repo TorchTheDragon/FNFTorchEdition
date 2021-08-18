@@ -1,6 +1,0 @@
--main App
--cpp bin
--D hxcpp_debugger
--D HXCPP_DEBUGGER
--debug
--cp ../unit
