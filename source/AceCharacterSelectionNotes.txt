@@ -49,6 +49,11 @@ In the if statement "if (stopspamming == false)". Changed the confirm animation 
 Deleted this entire line: "difficultySelectors.visible = weekUnlocked[curWeek];"
 Added function changeCharacter. It will also change the idle animation in the story menu.
 
+Testing something: Added selectedCharacter as a String Variable
+Testing something: In function updateText, changed "grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);" to "grpWeekCharacters.members[1].setCharacter(selectedCharacter);"
+Testing something: Gonna add a way to change variable in the function changeCharacter
+THIS ACTUALLY FUCKING WORKS OMG ^
+
 Might be all, still not certain.
 
 #Additional Notes
