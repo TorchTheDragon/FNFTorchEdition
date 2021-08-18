@@ -1,5 +1,7 @@
 **IMPORTANT**
 
+INSTEAD OF USING THIS CHARACTER MENU, I HAVE ENDED UP MAKING ONE THAT WORKS IN BOTH FREEPLAY AND STORY MODE, I RECOMMEND READING THE OTHER NOTES AND TRYING TO DO THAT ONE, BUT YOU CAN STILL USE THIS ONE IF YOU DON'T WANT TO USE THE OTHER ONE.
+
 For anyone using the Character Menu, please read this.
 
 I have been notified through a YouTube comment that compiling the CharMenu.hx alone wont work, and thats because I forgot to mention where I had put some variables.
