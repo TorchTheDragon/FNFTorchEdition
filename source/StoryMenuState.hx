@@ -38,6 +38,8 @@ class StoryMenuState extends MusicBeatState
 
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
 
+	public var selectedCharacter:String = 'bf';
+
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
 		['dad', 'bf', 'gf'],
@@ -417,14 +419,17 @@ class StoryMenuState extends MusicBeatState
 				case 0:
 					{
 						grpWeekCharacters.members[1].setCharacter('bf');
+						selectedCharacter = 'bf';
 					}
 				case 1:
 					{
 						grpWeekCharacters.members[1].setCharacter('pico');	
-					}			
+						selectedCharacter = 'pico';
+					}		
 				case 2:
 					{
 						grpWeekCharacters.members[1].setCharacter('torch');
+						selectedCharacter = 'torch';
 					}
 			}
 	
@@ -519,7 +524,7 @@ class StoryMenuState extends MusicBeatState
 	function updateText()
 	{
 		grpWeekCharacters.members[0].setCharacter(weekCharacters[curWeek][0]);
-		grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);
+		grpWeekCharacters.members[1].setCharacter(selectedCharacter);
 		grpWeekCharacters.members[2].setCharacter(weekCharacters[curWeek][2]);
 
 		txtTracklist.text = "Tracks\n";
