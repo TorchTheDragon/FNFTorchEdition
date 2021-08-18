@@ -11,8 +11,6 @@ Below "PlayState.storyDifficulty = curDifficulty;" I added "PlayState.storyChar 
 Above "if (accepted)" added two lines to change character
 Above changeSelection function added another function for changChar
 
-Appears to be all that needs to be changed here.
-
 #PlayState.hx
 
 Added "public static var storyChar:Int = 0;" above "public static var storyDifficulty:Int = 1;"
@@ -20,14 +18,12 @@ Above "boyfriend = new Boyfriend(770, 450, SONG.player1);" added an if/else if s
 Below the entire "switch (SONG.player2)" section put an if/else if statement below it. ex: 
         if (storyChar == 1)
             {   
-                SONG.player1 = 'pico';
+                SONG.player1 = 'bf-character1';
 			}
 		else if (storyChar == 2)
 			{
-				SONG.player1 = 'torch';
+				SONG.player1 = 'bf-character2';
 			}
-
-Possibly all that needed to be added. Still not certain.
 
 #StoryMenuState.hx
 
@@ -54,8 +50,6 @@ Testing Something:
 	In function updateText, changed "grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);" to "grpWeekCharacters.members[1].setCharacter(selectedCharacter);"
 	Gonna add a way to change variable in the function changeCharacter
 THIS ACTUALLY FUCKING WORKS LMAO ^
-
-Might be all, still not certain.
 
 #Additional Notes
 
