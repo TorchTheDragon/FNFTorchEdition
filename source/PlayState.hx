@@ -812,6 +812,7 @@ class PlayState extends MusicBeatState
 			case 'bf':
 				color2 = 0xFF31B0D1;
 				
+				/*
 				if (storyChar == 0)
 					{
 						remove(boyfriend);
@@ -826,7 +827,9 @@ class PlayState extends MusicBeatState
 					{
 						remove(boyfriend);
 						boyfriend = new Boyfriend(770, 450, 'torch');
-					} // Failed Idea
+					}
+				*/
+				// Failed Idea
 					
 			case 'bf-christmas':
 				color2 = 0xFF31B0D1;
