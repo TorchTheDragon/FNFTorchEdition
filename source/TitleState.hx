@@ -393,23 +393,13 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['TorchTheDragon', '']);
-			// credTextShit.visible = true;
-			case 3:
-				addMoreText('present');
-			// credTextShit.text += '\npresent...';
-			// credTextShit.addText();
-			case 4:
-				deleteCoolText();
-			// credTextShit.visible = false;
-			// credTextShit.text = 'In association \nwith';
-			// credTextShit.screenCenter();
-			case 5:
 				if (Main.watermarks)
 					createCoolText(['Kade Engine 1.5.4', 'by']);
 				else
 					createCoolText(['In Partnership', 'with']);
-			case 7:
+				//createCoolText(['TorchTheDragon', '']);
+			// credTextShit.visible = true;
+			case 3:
 				if (Main.watermarks)
 					addMoreText('KadeDeveloper');
 				else
@@ -417,10 +407,42 @@ class TitleState extends MusicBeatState
 					addMoreText('Newgrounds');
 					ngSpr.visible = true;
 				}
+				//addMoreText('presents');
+			// credTextShit.text += '\npresent...';
+			// credTextShit.addText();
+			case 4:
+				deleteCoolText();
+				ngSpr.visible = false;
+				//deleteCoolText();
+			// credTextShit.visible = false;
+			// credTextShit.text = 'In association \nwith';
+			// credTextShit.screenCenter();
+			case 5:
+				createCoolText(['TorchTheDragon', '']);
+				/*
+				if (Main.watermarks)
+					createCoolText(['Kade Engine 1.5.4', 'by']);
+				else
+					createCoolText(['In Partnership', 'with']);
+				*/
+			case 7:
+				addMoreText('presents');
+				/*
+				if (Main.watermarks)
+					addMoreText('KadeDeveloper');
+				else
+				{
+					addMoreText('Newgrounds');
+					ngSpr.visible = true;
+				}
+				*/
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
 				deleteCoolText();
+				/*
+				deleteCoolText();
 				ngSpr.visible = false;
+				*/
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
