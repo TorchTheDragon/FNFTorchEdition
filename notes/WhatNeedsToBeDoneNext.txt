@@ -1,0 +1,10 @@
+So, I need to start planning for a mod I guess.
+
+1. I will probably not include a character selection for the kind of mod I want to do
+2. It will definitely have 3-4 weeks (possibly)
+3. I need to create stages for all weeks as well as songs
+4. May do a slightly redone tutorial
+5. Need to come up with different notes per character
+6. Need to learn how to add dialogue and cutscenes
+7. Possibly might add danger notes
+8. Learn how to use modchart.lua's
