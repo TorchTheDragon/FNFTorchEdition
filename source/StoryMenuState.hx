@@ -24,7 +24,7 @@ class StoryMenuState extends MusicBeatState
 {
 	var scoreText:FlxText;
 
-	public var storyBGcolor:FlxColor = 0xFFF9CF51;
+	var storyBGcolor:FlxColor = 0xFFF9CF51;
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
@@ -113,6 +113,17 @@ class StoryMenuState extends MusicBeatState
 		rankText.screenCenter(X);
 
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
+
+		/*
+		switch (curChar){
+			case 0:
+				storyBGcolor = 0xFF31B0D1;
+			case 1:
+				storyBGcolor = 0xFFB7D855;
+			case 2: 
+				storyBGcolor = 0xFF9B0000;
+		}
+		*/
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, storyBGcolor);
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
@@ -440,19 +451,19 @@ class StoryMenuState extends MusicBeatState
 					{
 						grpWeekCharacters.members[1].setCharacter('bf');
 						selectedCharacter = 'bf';
-						storyBGcolor = 0xFF31B0D1;
+						//storyBGcolor = 0xFF31B0D1;
 					}
 				case 1:
 					{
 						grpWeekCharacters.members[1].setCharacter('pico');	
 						selectedCharacter = 'pico';
-						storyBGcolor = 0xFFB7D855;
+						//storyBGcolor = 0xFFB7D855;
 					}		
 				case 2:
 					{
 						grpWeekCharacters.members[1].setCharacter('torch');
 						selectedCharacter = 'torch';
-						storyBGcolor = 0xFF9B0000;
+						//storyBGcolor = 0xFF9B0000;
 					}
 			}
 	
