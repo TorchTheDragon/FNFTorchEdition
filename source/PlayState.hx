@@ -1694,6 +1694,15 @@ class PlayState extends MusicBeatState
 							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
 						}
 					}
+					/*
+					else if (SONG.player1 == 'torch') {
+						if (gottaHitNote) {
+							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
+						} else {
+							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
+						}
+					}
+					*/ //Remnants of an idea for notes for more than 2 people
 					else {
 						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
 					}
@@ -1826,7 +1835,15 @@ class PlayState extends MusicBeatState
 				case "torchn'trey":
 					if (SONG.player2 == 'trey' && player == 0)
 						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
-					else 
+					/*
+					if (SONG.player1 == 'torch' && player == 1)
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch')
+					else if (player == 0)
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
+					else
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
+					*/ //Just an attempt at making notes for more than 2 people but I guess that wont work.
+					else
 						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
 					babyArrow.animation.addByPrefix('green', 'arrowLEFT');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');

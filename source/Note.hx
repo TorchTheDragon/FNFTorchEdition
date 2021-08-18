@@ -100,9 +100,17 @@ class Note extends FlxSprite
 				updateHitbox();
 
 			case "torchn'trey":
-				if(isKey && SONG.player2 == 'trey') { 
+				if (isKey && SONG.player2 == 'trey') { 
 					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
 				}
+				/*
+				else if (isKey && SONG.player1 == 'torch') {
+					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
+				}
+				else {
+					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
+				}
+				*/ //This is the only part of the remnants that had actually worked lol
 				else {
 					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
 				}
