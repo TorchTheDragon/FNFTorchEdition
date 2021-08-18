@@ -9,15 +9,15 @@ class Ratings
 			ranking = "BotPlay";
 
         if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods == 0) // Marvelous (SICK) Full Combo
-            ranking = "(Full Combo! Only Sicks!)";
+            ranking = "Full Combo! Only Sicks!";
         else if (PlayState.misses == 0 && PlayState.bads == 0 && PlayState.shits == 0 && PlayState.goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
-            ranking = "(Full Combo. Great Hits!)";
+            ranking = "Full Combo! Great Hits!";
         else if (PlayState.misses == 0) // Regular FC
-            ranking = "(Full Combo)";
+            ranking = "Full Combo!";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
-            ranking = "(Single Digit Combo Break)";
+            ranking = "Single Digit Combo Break.";
         else
-            ranking = "(I guess you pass...)";
+            ranking = "I guess you pass...";
 
         // WIFE TIME :)))) (based on Wife3)
 
