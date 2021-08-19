@@ -398,8 +398,6 @@ class StoryMenuState extends MusicBeatState
 				if (curChar == 0)
 					grpWeekCharacters.members[1].animation.play('bfConfirm');
 				else if (curChar == 1)
-					grpWeekCharacters.members[1].animation.play('picoConfirm');
-				else if (curChar == 2)
 					grpWeekCharacters.members[1].animation.play('torchConfirm');
 				
 				//grpWeekCharacters.members[1].animation.play('bfConfirm');
@@ -441,8 +439,8 @@ class StoryMenuState extends MusicBeatState
 			curChar += change;
 	
 			if (curChar < 0)
-				curChar = 2;
-			if (curChar > 2)
+				curChar = 1;
+			if (curChar > 1)
 				curChar = 0;
 	
 			switch (curChar)
@@ -452,14 +450,8 @@ class StoryMenuState extends MusicBeatState
 						grpWeekCharacters.members[1].setCharacter('bf');
 						selectedCharacter = 'bf';
 						//storyBGcolor = 0xFF31B0D1;
-					}
+					}	
 				case 1:
-					{
-						grpWeekCharacters.members[1].setCharacter('pico');	
-						selectedCharacter = 'pico';
-						//storyBGcolor = 0xFFB7D855;
-					}		
-				case 2:
 					{
 						grpWeekCharacters.members[1].setCharacter('torch');
 						selectedCharacter = 'torch';

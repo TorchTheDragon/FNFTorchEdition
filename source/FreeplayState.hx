@@ -146,8 +146,6 @@ class FreeplayState extends MusicBeatState
 			case 0:
 				charIcon.animation.play('bf');
 			case 1:
-				charIcon.animation.play('pico');
-			case 2:
 				charIcon.animation.play('torch');
 		}
 		charIcon.setPosition(charText.x - 100, comboText.y + 10);
@@ -328,7 +326,7 @@ class FreeplayState extends MusicBeatState
 		{
 			curCharacter++;
 	
-			if (curCharacter > 2)
+			if (curCharacter > 1)
 				curCharacter = 0;
 	
 			switch (curCharacter)
@@ -336,8 +334,6 @@ class FreeplayState extends MusicBeatState
 				case 0:
 					charIcon.animation.play('bf');
 				case 1:
-					charIcon.animation.play('pico');
-				case 2:
 					charIcon.animation.play('torch');
 			}
 		}
