@@ -21,6 +21,7 @@ Add if/else statment to function generateStaticArrows case Normal and Default:
 						babyArrow.frames = Paths.getSparrowAtlas('(pathToCustomNotes)/NOTE_' + char2, 'shared');
 					else
 						babyArrow.frames = Paths.getSparrowAtlas('(pathToCustomNotes)/NOTE_' + char1, 'shared');
-After false in the note variable, add 'assets'
 
 #ChartingState.hx
+
+After false in the note variable, add 'assets'
