@@ -94,6 +94,9 @@ class PlayState extends MusicBeatState
 	public static var goods:Int = 0;
 	public static var sicks:Int = 0;
 
+	var char1:String = SONG.player1;
+	var char2:String = SONG.player2;
+
 	public static var songPosBG:FlxSprite;
 	public static var songPosBar:FlxBar;
 
@@ -806,37 +809,20 @@ class PlayState extends MusicBeatState
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 		
-		
+
+
 		switch (SONG.player1)
 		{
 			case 'bf':
 				color2 = 0xFF31B0D1;
-				
-				/*
-				if (storyChar == 0)
-					{
-						remove(boyfriend);
-						boyfriend = new Boyfriend(770, 450, 'bf');
-					}
-				else if (storyChar == 1)
-					{
-						remove(boyfriend);
-						boyfriend = new Boyfriend(770, 450, 'bf-christmas');
-					}
-				else if (storyChar == 2)
-					{
-						remove(boyfriend);
-						boyfriend = new Boyfriend(770, 450, 'torch');
-					}
-				*/
-				// Failed Idea
-					
 			case 'bf-christmas':
 				color2 = 0xFF31B0D1;
+				char1 = 'bf';
 			case 'bf-pixel':
 				color2 = 0xFF31B0D1;
 			case 'bf-car':
-				color2 = 0xFF31B0D1;	
+				color2 = 0xFF31B0D1;
+				char1 = 'bf';	
 			case 'torch':
 				color2 = 0xFF9B0000;
 		}
@@ -845,6 +831,7 @@ class PlayState extends MusicBeatState
 			case 'gf':
 				dad.setPosition(gf.x, gf.y);
 				gf.visible = false;
+				char2 = 'gf';
 				if (isStoryMode)
 				{
 					camPos.x += 600;
@@ -860,6 +847,7 @@ class PlayState extends MusicBeatState
 			case 'monster-christmas':
 				dad.y += 130;
 				color1 = 0xFFF3FF6E;
+				char2 = 'monster';
 			case 'dad':
 				camPos.x += 400;
 				color1 = 0xFFAF66CE;
@@ -867,6 +855,7 @@ class PlayState extends MusicBeatState
 				color1 = 0xFFD8558E;
 			case 'mom-car':
 				color1 = 0xFFD8558E;
+				char2 = 'mom';
 			case 'trey':
 				dad.y += 50;
 				color1 = 0xFF00FFE5;
@@ -879,6 +868,7 @@ class PlayState extends MusicBeatState
 			case 'parents-christmas':
 				dad.x -= 500;
 				color1 = 0xFFD8558E;
+				char2 = 'parents';
 			case 'senpai':
 				dad.x += 150;
 				dad.y += 360;
@@ -898,13 +888,9 @@ class PlayState extends MusicBeatState
 
 		if (storyChar == 1)
 			{
-				SONG.player1 = 'pico';
-				color2 = 0xFFB7D855;
-			}
-		else if (storyChar == 2)
-			{
 				SONG.player1 = 'torch';
 				color2 = 0xFF9B0000;
+				char1 = 'torch';
 			}
 
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
@@ -1671,9 +1657,9 @@ class PlayState extends MusicBeatState
 
 				var swagNote:Note;
 				if (gottaHitNote) {
-					swagNote = new Note(daStrumTime, daNoteData, oldNote, false);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, char1);
 				} else {
-					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, true);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, char2);
 				}
 
 				swagNote.sustainLength = songNotes[2];
@@ -1690,13 +1676,13 @@ class PlayState extends MusicBeatState
 
 					//var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
 					var sustainNote:Note;
-					if (SONG.player2 == 'trey') {
-						if (gottaHitNote) {
-							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
-						} else {
-							sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, true);
-						}
+				
+					if (gottaHitNote) {
+						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, char1);
+					} else {
+						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, char2);
 					}
+		
 					/*
 					else if (SONG.player1 == 'torch') {
 						if (gottaHitNote) {
@@ -1706,9 +1692,6 @@ class PlayState extends MusicBeatState
 						}
 					}
 					*/ //Remnants of an idea for notes for more than 2 people
-					else {
-						sustainNote = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true, false);
-					}
 					
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
@@ -1802,52 +1785,10 @@ class PlayState extends MusicBeatState
 					}
 				
 				case 'normal':
-					babyArrow.frames = Paths.getSparrowAtlas('NOTE_assets');
-					babyArrow.animation.addByPrefix('green', 'arrow static instance 1');
-					babyArrow.animation.addByPrefix('blue', 'arrow static instance 2');
-					babyArrow.animation.addByPrefix('purple', 'arrow static instance 3');
-					babyArrow.animation.addByPrefix('red', 'arrow static instance 4');
-	
-					babyArrow.antialiasing = true;
-					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.7));
-	
-					switch (Math.abs(i))
-					{
-						case 0:
-							babyArrow.x += Note.swagWidth * 0;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 1');
-							babyArrow.animation.addByPrefix('pressed', 'left press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'left confirm instance 1', 24, false);
-						case 1:
-							babyArrow.x += Note.swagWidth * 1;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 2');
-							babyArrow.animation.addByPrefix('pressed', 'down press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'down confirm instance 1', 24, false);
-						case 2:
-							babyArrow.x += Note.swagWidth * 2;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 4');
-							babyArrow.animation.addByPrefix('pressed', 'up press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'up confirm instance 1', 24, false);
-						case 3:
-							babyArrow.x += Note.swagWidth * 3;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 3');
-							babyArrow.animation.addByPrefix('pressed', 'right press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'right confirm instance 1', 24, false);
-						}
-
-				case "torchn'trey":
-					if (SONG.player2 == 'trey' && player == 0)
-						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
-					/*
-					if (SONG.player1 == 'torch' && player == 1)
-						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch')
-					else if (player == 0)
-						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
+					if (player == 0)
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_' + char2, 'shared');
 					else
-						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
-					*/ //Just an attempt at making notes for more than 2 people but I guess that wont work.
-					else
-						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_' + char1, 'shared');
 					babyArrow.animation.addByPrefix('green', 'arrowLEFT');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowUP');
@@ -1878,40 +1819,43 @@ class PlayState extends MusicBeatState
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
 							babyArrow.animation.addByPrefix('pressed', 'rightPRESS', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'rightCONFIRM', 24, false);
-						}
+					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('NOTE_assets');
-					babyArrow.animation.addByPrefix('green', 'arrow static instance 1');
-					babyArrow.animation.addByPrefix('blue', 'arrow static instance 2');
-					babyArrow.animation.addByPrefix('purple', 'arrow static instance 3');
-					babyArrow.animation.addByPrefix('red', 'arrow static instance 4');
-
+					if (player == 0)
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_' + char2, 'shared');
+					else
+						babyArrow.frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_' + char1, 'shared');
+					babyArrow.animation.addByPrefix('green', 'arrowLEFT');
+					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
+					babyArrow.animation.addByPrefix('purple', 'arrowUP');
+					babyArrow.animation.addByPrefix('red', 'arrowRIGHT');
+	
 					babyArrow.antialiasing = true;
 					babyArrow.setGraphicSize(Std.int(babyArrow.width * 0.7));
-
+	
 					switch (Math.abs(i))
 					{
 						case 0:
 							babyArrow.x += Note.swagWidth * 0;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 1');
-							babyArrow.animation.addByPrefix('pressed', 'left press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'left confirm instance 1', 24, false);
+							babyArrow.animation.addByPrefix('static', 'arrowLEFT');
+							babyArrow.animation.addByPrefix('pressed', 'leftPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'leftCONFIRM', 24, false);
 						case 1:
 							babyArrow.x += Note.swagWidth * 1;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 2');
-							babyArrow.animation.addByPrefix('pressed', 'down press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'down confirm instance 1', 24, false);
+							babyArrow.animation.addByPrefix('static', 'arrowDOWN');
+							babyArrow.animation.addByPrefix('pressed', 'downPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'downCONFIRM', 24, false);
 						case 2:
 							babyArrow.x += Note.swagWidth * 2;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 4');
-							babyArrow.animation.addByPrefix('pressed', 'up press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'up confirm instance 1', 24, false);
+							babyArrow.animation.addByPrefix('static', 'arrowUP');
+							babyArrow.animation.addByPrefix('pressed', 'upPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'upCONFIRM', 24, false);
 						case 3:
 							babyArrow.x += Note.swagWidth * 3;
-							babyArrow.animation.addByPrefix('static', 'arrow static instance 3');
-							babyArrow.animation.addByPrefix('pressed', 'right press instance 1', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'right confirm instance 1', 24, false);
+							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
+							babyArrow.animation.addByPrefix('pressed', 'rightPRESS', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'rightCONFIRM', 24, false);
 					}
 			}
 

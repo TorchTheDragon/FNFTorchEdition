@@ -42,7 +42,7 @@ class Note extends FlxSprite
 
 	public var rating:String = "shit";
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?isKey:Bool = false)
+	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false/*, ?isKey:Bool = false*/, ?char:String = 'assets')
 	{
 		super();
 
@@ -99,59 +99,23 @@ class Note extends FlxSprite
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
 
-			case "torchn'trey":
-				if (isKey && SONG.player2 == 'trey') { 
-					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_trey');
-				}
-				/*
-				else if (isKey && SONG.player1 == 'torch') {
-					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
-				}
-				else {
-					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_assets');
-				}
-				*/ //This is the only part of the remnants that had actually worked lol
-				else {
-					frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_torch');
-				}
-
-					animation.addByPrefix('greenScroll', 'up0');
-					animation.addByPrefix('redScroll', 'right0');
-					animation.addByPrefix('blueScroll', 'down0');
-					animation.addByPrefix('purpleScroll', 'left0');
-
-					animation.addByPrefix('purpleholdend', 'leftEND');
-					animation.addByPrefix('greenholdend', 'upEND');
-					animation.addByPrefix('redholdend', 'rightEND');
-					animation.addByPrefix('blueholdend', 'downEND');
-
-					animation.addByPrefix('purplehold', 'leftHOLD');
-					animation.addByPrefix('greenhold', 'upHOLD');
-					animation.addByPrefix('redhold', 'rightHOLD');
-					animation.addByPrefix('bluehold', 'downHOLD');
-
-				setGraphicSize(Std.int(width * 0.7));
-				updateHitbox();
-				antialiasing = true;
-
 			default:
-				frames = Paths.getSparrowAtlas('NOTE_assets');
+				frames = Paths.getSparrowAtlas('dragons-stuff/shittynotes/NOTE_' + char, 'shared');
 
-				animation.addByPrefix('greenScroll', 'green instance 1');
-				animation.addByPrefix('redScroll', 'red instance 1');
-				animation.addByPrefix('blueScroll', 'blue instance 1');
-				animation.addByPrefix('purpleScroll', 'purple instance 1');
+				animation.addByPrefix('greenScroll', 'up0');
+				animation.addByPrefix('redScroll', 'right0');
+				animation.addByPrefix('blueScroll', 'down0');
+				animation.addByPrefix('purpleScroll', 'left0');
 
-				animation.addByPrefix('purpleholdend', 'pruple end hold instance 1');
-				animation.addByPrefix('greenholdend', 'green hold end instance 1');
-				animation.addByPrefix('redholdend', 'red hold end instance 1');
-				animation.addByPrefix('blueholdend', 'blue hold end instance 1');
+				animation.addByPrefix('purpleholdend', 'leftEND');
+				animation.addByPrefix('greenholdend', 'upEND');
+				animation.addByPrefix('redholdend', 'rightEND');
+				animation.addByPrefix('blueholdend', 'downEND');
 
-
-				animation.addByPrefix('purplehold', 'purple hold piece instance 1');
-				animation.addByPrefix('greenhold', 'green hold piece instance 1');
-				animation.addByPrefix('redhold', 'red hold piece instance 1');
-				animation.addByPrefix('bluehold', 'blue hold piece instance 1');
+				animation.addByPrefix('purplehold', 'leftHOLD');
+				animation.addByPrefix('greenhold', 'upHOLD');
+				animation.addByPrefix('redhold', 'rightHOLD');
+				animation.addByPrefix('bluehold', 'downHOLD');
 
 
 				setGraphicSize(Std.int(width * 0.7));
