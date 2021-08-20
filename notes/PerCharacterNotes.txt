@@ -1,0 +1,26 @@
+#Note.hx
+
+Add "?char:String = 'assets'" variable to "public function new..."
+In the "default" case, swap the frames for "frames = Paths.getSparrowAtlas('(pathToCustomNotes)/NOTE_' + char, 'shared');"
+
+#PlayState.hx
+
+Added two variables, "var char1:String = SONG.player1;" and "var char2:String = SONG.player2;"
+Added char1 variables to all needed SONG.player1 cases, same with the char2 in SONG.player2 cases
+(If using character menu) Add char1 value to each character
+Anywhere it says "gottaHitNote" make an if/else statement:
+                if (gottaHitNote) {
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, char1);
+				} else {
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, true);
+					swagNote = new Note(daStrumTime, daNoteData, oldNote, false, char2);
+				} //If its for sustain notes, replace the false's with true's
+Add if/else statment to function generateStaticArrows case Normal and Default:
+                    if (player == 0)
+						babyArrow.frames = Paths.getSparrowAtlas('(pathToCustomNotes)/NOTE_' + char2, 'shared');
+					else
+						babyArrow.frames = Paths.getSparrowAtlas('(pathToCustomNotes)/NOTE_' + char1, 'shared');
+After false in the note variable, add 'assets'
+
+#ChartingState.hx
