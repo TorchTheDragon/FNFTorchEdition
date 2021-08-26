@@ -9,7 +9,7 @@ Added three lines of code above "add(scoreText);" for "charText = new FlxText...
 Added import "import Song.SwagSong;"
 Below "PlayState.storyDifficulty = curDifficulty;" I added "PlayState.storyChar = curCharacter;"
 Above "if (accepted)" added two lines to change character
-Above changeSelection function added another function for changChar
+Above changeSelection function added another function for changeChar
 
 #PlayState.hx
 
@@ -17,13 +17,13 @@ Added "public static var storyChar:Int = 0;" above "public static var storyDiffi
 Above "boyfriend = new Boyfriend(770, 450, SONG.player1);" added an if/else if statement for storyChar
 Below the entire "switch (SONG.player2)" section put an if/else if statement below it. ex: 
         if (storyChar == 1)
-            {   
-                SONG.player1 = 'bf-character1';
-			}
-		else if (storyChar == 2)
-			{
-				SONG.player1 = 'bf-character2';
-			}
+        {   
+        	SONG.player1 = 'bf-character1';
+	}
+	else if (storyChar == 2)
+	{
+		SONG.player1 = 'bf-character2';
+	}
 
 #StoryMenuState.hx
 
@@ -32,11 +32,11 @@ Added "var curChar:Int = 0;" above "var curDifficulty:Int = 1;"
 Above changeDifficuly function added a function for changeCharacter -- The "switch (curChar)" inside of it looks to just be for changing the bf in middle of screen to other characters
 Above changeWeek function added new function for changeSelection
 Above "var difficultySelectors:FlxGroup;" added three variables: 
-    var characterSelectors:FlxGroup;
+    	var characterSelectors:FlxGroup;
 	var leftCharArrow:FlxSprite;
 	var rightCharArrow:FlxSprite;
 Below "add(grpWeekCharacters);" add these two lines:
-    characterSelectors = new FlxGroup();
+    	characterSelectors = new FlxGroup();
 	add(characterSelectors);
 Below the "add(characterSelectors);, made two FlxSprites for leftCharArrow and rightCharArrow
 Added multiple lines in the "if (controls.RIGHT)" and "if (controls.LEFT)" section. You will have to look into it yourself, too much to add here
