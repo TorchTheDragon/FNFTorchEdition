@@ -94,8 +94,8 @@ class PlayState extends MusicBeatState
 	public static var goods:Int = 0;
 	public static var sicks:Int = 0;
 
-	var char1:String = SONG.player1;
-	var char2:String = SONG.player2;
+	var char1:String = SONG.player1; //'bf'
+	var char2:String = SONG.player2; //'dad'
 
 	public static var songPosBG:FlxSprite;
 	public static var songPosBar:FlxBar;
@@ -884,6 +884,9 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 				color1 = 0xFFFF3C6E;
+			case 'torch':
+				dad.y += 300;
+				color1 = 0xFF9B0000;
 		}
 
 		if (storyChar == 1)
