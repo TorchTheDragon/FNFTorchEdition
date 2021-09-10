@@ -164,6 +164,7 @@ class Note extends FlxSprite
 					animation.play('blueholdend');
 				case 0:
 					animation.play('purpleholdend');
+					
 			}
 			
 
