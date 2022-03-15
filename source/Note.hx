@@ -9,9 +9,9 @@ import flixel.util.FlxColor;
 import Song.SwagSong;
 import Boyfriend.Boyfriend;
 import Character.Character;
-#if polymod
+/*#if polymod
 import polymod.format.ParseRules.TargetSignatureElement;
-#end
+#end*/
 import PlayState;
 import PlayState.SONG;
 
