@@ -17,6 +17,8 @@ import Boyfriend.Boyfriend;
 import Character.Character;
 import HealthIcon.HealthIcon;
 import flixel.ui.FlxBar;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
 
 typedef CharacterMenu = {
     var name:String;
@@ -188,13 +190,19 @@ class CharMenu extends MusicBeatState
                 curSelected = 0;
 
             var otherInt:Int = 0;
+		
+	    for (i in 0...iconArray.length)
+            {
+                FlxTween.tween(iconArray[i], {alpha: 0.4}, 0.4, {ease: FlxEase.expoInOut});
+                FlxTween.tween(iconArray[i].scale, {x: 0.6}, 0.4, {ease: FlxEase.expoInOut});
+                FlxTween.tween(iconArray[i].scale, {y: 0.6}, 0.4, {ease: FlxEase.expoInOut});
 
-            for (i in 0...iconArray.length)
-                {
-                    iconArray[i].alpha = 1;
+                if (i == curSelected) {
+                    FlxTween.tween(iconArray[i], {alpha: 1}, 0.4, {ease: FlxEase.expoInOut});
+                    FlxTween.tween(iconArray[i].scale, {x: 1}, 0.4, {ease: FlxEase.expoInOut});
+                    FlxTween.tween(iconArray[i].scale, {y: 1}, 0.4, {ease: FlxEase.expoInOut});
                 }
-            
-            iconArray[curSelected].alpha = 1;
+            }
 
             for (item in grpMenu.members)
                 {
