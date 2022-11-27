@@ -46,6 +46,7 @@ Deleted this entire line: "difficultySelectors.visible = weekUnlocked[curWeek];"
 Added function changeCharacter. It will also change the idle animation in the story menu.
 
 Testing Something:
+//Just to let you know, this test section is ONLY if you have the silhouette of a character made for the Story Menu
 	Added selectedCharacter as a String Variable - Below weekUnlocked variable add "public var selectedCharacter:String = 'bf';"
 	In function updateText, changed "grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);" to "grpWeekCharacters.members[1].setCharacter(selectedCharacter);"
 	Gonna add a way to change variable in the function changeCharacter
