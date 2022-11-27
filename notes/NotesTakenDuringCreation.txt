@@ -32,6 +32,13 @@ That should be all for the "sprTracker" variable, now for the "hasPlayedOnce" va
 *PlayState.hx* - 
 All you have to do is add "public static var hasPlayedOnce:Bool = false;" below "public static var noteBools:Array<Bool> = [false, false, false, false];"
 
+For anyone doing Psych (from my own research), if you get these errors:
+source/CharMenu.hx:148: characters 13-28 : Controls has no field LEFT_P
+source/CharMenu.hx:149: characters 15-31 : Controls has no field RIGHT_P
+Then, all you need to do is change LEFT_P and RIGHT_P to UI_LEFT_P and UI_RIGHT_P.
+Although, these are untested, it should work based on the controls in the Psych Engine source code 
+//If anyone tests this for, please let me know if it works or not
+
 **END OF IMPORTANT INFORMATION (for now)
 
 
