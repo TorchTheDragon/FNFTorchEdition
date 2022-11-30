@@ -293,7 +293,7 @@ class FreeplayState extends MusicBeatState
 			PlayState.storyChar = curCharacter;
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
-			//FlxG.switchState(new CharMenu()); //Character Menu State temp disabled till I figure out a new and better way
+			FlxG.switchState(new CharMenu());
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
